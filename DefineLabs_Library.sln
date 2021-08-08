@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefineLabs_Library", "DefineLabs_Library.csproj", "{AA1DA620-AB8D-4A1C-B784-37576E1D4357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefineLabs_LibAPI", "..\DefineLabs_LibAPI\DefineLabs_LibAPI.csproj", "{7BEECD19-2503-49A5-AA40-6BF06756197E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA1DA620-AB8D-4A1C-B784-37576E1D4357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA1DA620-AB8D-4A1C-B784-37576E1D4357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA1DA620-AB8D-4A1C-B784-37576E1D4357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA1DA620-AB8D-4A1C-B784-37576E1D4357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BEECD19-2503-49A5-AA40-6BF06756197E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BEECD19-2503-49A5-AA40-6BF06756197E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BEECD19-2503-49A5-AA40-6BF06756197E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BEECD19-2503-49A5-AA40-6BF06756197E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FDC050F-A4A2-4592-AEC2-9B9450010BCF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<DefineLabs_Library.Models.Book>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="card card-header">
+        <div class="card-header">
+            Book Details
+        </div>
+    </div> 
+    <div class="tn btn-lg float-right">
+        <input type="button" value="Go to Author List" onclick="location.href = '@Url.Action("Index","Author")'" />
+
+        @*<p>
+            @Html.ActionLink("Add Book", "Create")
+        </p>*@
+       
+            <input type="button" value="Add Book" onclick="location.href = '@Url.Action("Create","Book")'" />
+       
+    </div>
+
+    <table class="table table-hover">
+        <thead class="table-light">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.bookID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.bookTitle)
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.authorID)
+                    </th>*@
+                <th></th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.bookID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.bookTitle)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.authorID)
+                    </td>*@
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.bookID }) |
+                    @*@Html.ActionLink("Details", "Details", new { id = item.bookID }) |*@
+                    @Html.ActionLink("Delete", "Delete", new { id = item.bookID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
